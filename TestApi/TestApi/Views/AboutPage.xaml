@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TestApi.Views.AboutPage"
+             xmlns:vm="clr-namespace:TestApi.ViewModels"
+             Title="Главная">
+
+
+
+    <StackLayout>
+        <FlexLayout Direction="Column">
+            <!--banner-->
+            <Label FontAttributes="Bold" FontSize="14" TextColor="Black" Margin="20, 20, 0, 20" Text="Киевская улица, 71"/>
+            <Image Source="banner.png"/>
+        </FlexLayout>
+        <ScrollView>
+            <!--если контент не помещается в высоту, то этот тег добавляет вертикальный скролл-->
+            <FlexLayout Direction="Row" JustifyContent="SpaceAround" AlignItems="Center" Wrap="Wrap" >
+
+                <Frame x:Name="restaurant_block" Padding="0" Margin="5" CornerRadius="10" WidthRequest="160" HeightRequest="220" >
+                    <!-- Котейнер / блок -->
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="OnFrameTapped"/>
+                    </Frame.GestureRecognizers>
+                    <Frame.Content>
+                        <StackLayout Padding="5, 0, 0, 0">
+                            <Image Source="food1.png" Aspect="AspectFill" />
+                            <Label Text="Рестораны" HorizontalOptions="Start" VerticalOptions="CenterAndExpand" TextColor="Black" FontSize="20" />
+                        </StackLayout>
+                    </Frame.Content>
+                </Frame>
+
+                <Frame Padding="0" Margin="10" CornerRadius="10" WidthRequest="160" HeightRequest="220" >
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                    </Frame.GestureRecognizers>
+                    <Frame.Content>
+                        <StackLayout Padding="5, 0, 0, 0">
+                            <Image Source="vegetables.png" Aspect="AspectFill" />
+                            <Label Text="Магазины" HorizontalOptions="Start" VerticalOptions="CenterAndExpand" TextColor="Black" FontSize="20" />
+                        </StackLayout>
+                    </Frame.Content>
+                </Frame>
+
+                <Frame Padding="0" Margin="5" CornerRadius="10" WidthRequest="160" HeightRequest="220" >
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer />
+                    </Frame.GestureRecognizers>
+                    <Frame.Content>
+                        <StackLayout Padding="5, 0, 0, 0">
+                            <Image Source="flower.png" Aspect="AspectFill" />
+                            <Label Text="Цветы" HorizontalOptions="Start" VerticalOptions="CenterAndExpand" TextColor="Black" FontSize="20" />
+                        </StackLayout>
+                    </Frame.Content>
+                </Frame>
+
+                <Frame Padding="0" Margin="5" CornerRadius="10" WidthRequest="160" HeightRequest="220" >
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer/>
+                    </Frame.GestureRecognizers>
+                    <Frame.Content>
+                        <StackLayout Padding="5, 0, 0, 0">
+                            <Image Source="pills2.png" Aspect="AspectFill" />
+                            <Label Text="Лекарства" HorizontalOptions="Start" VerticalOptions="CenterAndExpand" TextColor="Black" FontSize="20" />
+                        </StackLayout>
+                    </Frame.Content>
+                </Frame>
+
+                <Frame Padding="0" Margin="5" CornerRadius="10" WidthRequest="160" HeightRequest="220" >
+                    <Frame.Content>
+                        <StackLayout Padding="5, 0, 0, 0">
+                            <Image Source="glowes.png" />
+                            <Label Text="Хоз. товары" HorizontalOptions="Start" VerticalOptions="CenterAndExpand" TextColor="Black" FontSize="20" />
+                        </StackLayout>
+                    </Frame.Content>
+                </Frame>
+
+                <Frame Padding="0" Margin="5" CornerRadius="10" WidthRequest="160" HeightRequest="220" >
+                    <Frame.Content>
+                        <StackLayout Padding="5, 0, 0, 0">
+                            <Image Source="dog.png" Aspect="AspectFill" />
+                            <Label Text="Зоотовары" HorizontalOptions="Start" VerticalOptions="CenterAndExpand" TextColor="Black" FontSize="20" />
+                        </StackLayout>
+                    </Frame.Content>
+                </Frame>
+
+                <Frame Padding="0" Margin="5" CornerRadius="10" WidthRequest="160" HeightRequest="220" >
+                    <Frame.Content>
+                        <StackLayout Padding="5, 0, 0, 0">
+                            <Image Source="boxes.png" Aspect="AspectFill" />
+                            <Label Text="Курьерская доставка" HorizontalOptions="Start" VerticalOptions="CenterAndExpand" TextColor="Black" FontSize="20" />
+                        </StackLayout>
+                    </Frame.Content>
+                </Frame>
+
+                <Frame Padding="0" Margin="5" CornerRadius="10" WidthRequest="160" HeightRequest="220" >
+                    <Frame.Content>
+                        <StackLayout Padding="5, 0, 0, 0">
+                            <Image Source="todolist.png" Aspect="AspectFill" />
+                            <Label Text="Заказ по списку" HorizontalOptions="Start" VerticalOptions="CenterAndExpand" TextColor="Black" FontSize="20" />
+                        </StackLayout>
+                    </Frame.Content>
+                </Frame>
+
+            </FlexLayout>
+
+        </ScrollView>
+
+    </StackLayout>
+
+</ContentPage>

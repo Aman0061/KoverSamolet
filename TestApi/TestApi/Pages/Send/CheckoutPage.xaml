@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TestApi.Pages.Send.CheckoutPage">
+
+
+    <StackLayout>
+        <!-- Поле "Телефон" -->
+        <Entry x:Name="phoneEntry" Placeholder="Телефон" />
+
+        <!-- Поле "ФИО" -->
+        <Entry x:Name="fioEntry" Placeholder="ФИО" />
+
+        <!-- Поле "Адрес" -->
+        <Entry x:Name="addressEntry" Placeholder="Адрес" />
+
+        <!-- Поле "Комментарий" -->
+        <Entry x:Name="commentEntry" Placeholder="Комментарий" />
+
+        <!-- Поле "Сдача" -->
+        <Entry x:Name="sdachaEntry" Placeholder="Сдача с..." />
+
+        <!-- Label для отображения общей суммы заказа -->
+        <Label Text="Итого: " FontSize="20" TextColor="Black" />
+        <Label x:Name="totalAmountLabel" FontSize="20" TextColor="Black" />
+
+        <!-- Кнопка "Отправить" -->
+        <Button Text="Отправить" Clicked="SendButton_Clicked" />
+    </StackLayout>
+
+</ContentPage>
