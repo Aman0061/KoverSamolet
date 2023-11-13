@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TestApi.Views.CartPage">
+
+    <StackLayout>
+        <Label Text="Корзина" HorizontalOptions="Center" FontSize="Title" Margin="10,10,10,0" />
+
+        <ListView x:Name="cartListView" ItemSelected="OnItemSelected">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout Orientation="Horizontal" Margin="10,0,10,0">
+                            <Label Text="{Binding ProductName}" HorizontalOptions="StartAndExpand" />
+                            <Label Text="{Binding ProductPrice}" HorizontalOptions="Center" />
+                            <!--<Label Text="{Binding EstablishmentCode}" HorizontalOptions="Center" /> -->
+                            <!--<Label Text="{Binding FoodCodeid}" HorizontalOptions="Center" />-->
+                            <Button Text="-" Clicked="DecreaseQuantityClicked" WidthRequest="50" CommandParameter="{Binding .}" />
+                            <Label Text="{Binding Quantity}" HorizontalOptions="Center" />
+                            <Button Text="+" Clicked="IncreaseQuantityClicked" WidthRequest="50" CommandParameter="{Binding .}" />
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+
+        <Label Text="Итого: $XXX" HorizontalOptions="EndAndExpand" Margin="0,10,10,10" x:Name="totalLabel"/>
+
+        <Button Text="Оформить заказ" Clicked="OnCheckoutClicked" HorizontalOptions="Center" Margin="10,10,10,10" />
+    </StackLayout>
+</ContentPage>

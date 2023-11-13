@@ -15,6 +15,7 @@ namespace TestApi.Pages.CartPage
         public CartPage()
         {
             InitializeComponent();
+            Shell.SetNavBarIsVisible(this, false);
         }
 
         protected override void OnAppearing()

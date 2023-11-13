@@ -6,9 +6,59 @@
              mc:Ignorable="d"
              x:Class="TestApi.Views.LoginPage"
              Shell.NavBarIsVisible="False">
-    <ContentPage.Content>
-        <StackLayout Padding="10,0,10,0" VerticalOptions="Center">
-            <Button VerticalOptions="Center" Text="Login" Command="{Binding LoginCommand}"/>
-        </StackLayout>
-    </ContentPage.Content>
+    
+    
+    <StackLayout Padding="10">
+        <Frame CornerRadius="10" Padding="0" BackgroundColor="White" HeightRequest="60">
+            <Frame.GestureRecognizers>
+                <TapGestureRecognizer/>
+            </Frame.GestureRecognizers>
+            <FlexLayout Direction = "Row" JustifyContent="SpaceBetween" AlignContent="Center" AlignItems="Center">
+                <Label Padding="10" FontSize="18" TextColor="Black" FontAttributes="Bold" Text="Рестораны"/>
+                <Image WidthRequest="120" Aspect="AspectFill" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Source="food1.png"/>
+            </FlexLayout>
+        </Frame>
+        <Frame CornerRadius="10" Padding="0" BackgroundColor="White" HeightRequest="60">
+            <FlexLayout Direction = "Row" JustifyContent="SpaceBetween" AlignContent="Center" AlignItems="Center">
+                <Label Padding="10" FontSize="18" TextColor="Black" FontAttributes="Bold" Text="Магазины"/>
+                <Image WidthRequest="120" Aspect="AspectFill" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Source="vegetables.png"/>
+            </FlexLayout>
+        </Frame>
+        <Frame CornerRadius="10" Padding="0" BackgroundColor="White" HeightRequest="60">
+            <FlexLayout Direction = "Row" JustifyContent="SpaceBetween" AlignContent="Center" AlignItems="Center">
+                <Label Padding="10" FontSize="18" TextColor="Black" FontAttributes="Bold" Text="Цветы"/>
+                <Image WidthRequest="120" Aspect="AspectFill" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Source="flower.png"/>
+            </FlexLayout>
+        </Frame>
+        <Frame CornerRadius="10" Padding="0" BackgroundColor="White" HeightRequest="60">
+            <FlexLayout Direction = "Row" JustifyContent="SpaceBetween" AlignContent="Center" AlignItems="Center">
+                <Label Padding="10" FontSize="18" TextColor="Black" FontAttributes="Bold" Text="Лекарства"/>
+                <Image WidthRequest="120" Aspect="AspectFill" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Source="pills2.png"/>
+            </FlexLayout>
+        </Frame>
+        <Frame CornerRadius="10" Padding="0" BackgroundColor="White" HeightRequest="60">
+            <FlexLayout Direction = "Row" JustifyContent="SpaceBetween" AlignContent="Center" AlignItems="Center">
+                <Label Padding="10" FontSize="18" TextColor="Black" FontAttributes="Bold" Text="Хоз. товары"/>
+                <Image WidthRequest="120" Aspect="AspectFill" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Source="glowes.png"/>
+            </FlexLayout>
+        </Frame>
+        <Frame CornerRadius="10" Padding="0" BackgroundColor="White" HeightRequest="60">
+            <FlexLayout Direction = "Row" JustifyContent="SpaceBetween" AlignContent="Center" AlignItems="Center">
+                <Label Padding="10" FontSize="18" TextColor="Black" FontAttributes="Bold" Text="Зоотовары"/>
+                <Image WidthRequest="120" Aspect="AspectFill" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Source="dog.png"/>
+            </FlexLayout>
+        </Frame>
+        <Frame CornerRadius="10" Padding="0" BackgroundColor="White" HeightRequest="60">
+            <FlexLayout Direction = "Row" JustifyContent="SpaceBetween" AlignContent="Center" AlignItems="Center">
+                <Label Padding="10" FontSize="18" TextColor="Black" FontAttributes="Bold" Text="Курьерская доставка"/>
+                <Image WidthRequest="120" Aspect="AspectFill" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Source="boxes.png"/>
+            </FlexLayout>
+        </Frame>
+        <Frame CornerRadius="10" Padding="0" BackgroundColor="White" HeightRequest="60">
+            <FlexLayout Direction = "Row" JustifyContent="SpaceBetween" AlignContent="Center" AlignItems="Center">
+                <Label Padding="10" FontSize="18" TextColor="Black" FontAttributes="Bold" Text="Заказ по списку"/>
+                <Image WidthRequest="120" Aspect="AspectFill" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Source="todolist.png"/>
+            </FlexLayout>
+        </Frame>
+    </StackLayout>
 </ContentPage>

@@ -7,7 +7,6 @@ D:\XamarinProjects\TestApi\TestApi\TestApi\obj\Debug\netstandard2.0\TestApi.Gene
 D:\XamarinProjects\TestApi\TestApi\TestApi\obj\Debug\netstandard2.0\App.xaml.g.cs
 D:\XamarinProjects\TestApi\TestApi\TestApi\obj\Debug\netstandard2.0\AppShell.xaml.g.cs
 D:\XamarinProjects\TestApi\TestApi\TestApi\obj\Debug\netstandard2.0\Pages\CafeList\CafeList.xaml.g.cs
-D:\XamarinProjects\TestApi\TestApi\TestApi\obj\Debug\netstandard2.0\Pages\CartPage\CartPage.xaml.g.cs
 D:\XamarinProjects\TestApi\TestApi\TestApi\obj\Debug\netstandard2.0\Pages\PageCafe\Page1.xaml.g.cs
 D:\XamarinProjects\TestApi\TestApi\TestApi\obj\Debug\netstandard2.0\Pages\Send\CheckoutPage.xaml.g.cs
 D:\XamarinProjects\TestApi\TestApi\TestApi\obj\Debug\netstandard2.0\Pages\TestApiPost\TestPost.xaml.g.cs
@@ -23,3 +22,5 @@ D:\XamarinProjects\TestApi\TestApi\TestApi\obj\Debug\netstandard2.0\XamlC.stamp
 D:\XamarinProjects\TestApi\TestApi\TestApi\obj\Debug\netstandard2.0\TestApi.dll
 D:\XamarinProjects\TestApi\TestApi\TestApi\obj\Debug\netstandard2.0\refint\TestApi.dll
 D:\XamarinProjects\TestApi\TestApi\TestApi\obj\Debug\netstandard2.0\TestApi.pdb
+D:\XamarinProjects\TestApi\TestApi\TestApi\obj\Debug\netstandard2.0\Views\CartPage.xaml.g.cs
+D:\XamarinProjects\TestApi\TestApi\TestApi\obj\Debug\netstandard2.0\Pages\CartPage\CartPage.xaml.g.cs

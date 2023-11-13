@@ -12,6 +12,7 @@ D:\XamarinProjects\TestApi\TestApi\TestApi\obj\Release\netstandard2.0\Pages\Page
 D:\XamarinProjects\TestApi\TestApi\TestApi\obj\Release\netstandard2.0\Pages\Send\CheckoutPage.xaml.g.cs
 D:\XamarinProjects\TestApi\TestApi\TestApi\obj\Release\netstandard2.0\Pages\TestApiPost\TestPost.xaml.g.cs
 D:\XamarinProjects\TestApi\TestApi\TestApi\obj\Release\netstandard2.0\Views\AboutPage.xaml.g.cs
+D:\XamarinProjects\TestApi\TestApi\TestApi\obj\Release\netstandard2.0\Views\CartPage.xaml.g.cs
 D:\XamarinProjects\TestApi\TestApi\TestApi\obj\Release\netstandard2.0\Views\ItemDetailPage.xaml.g.cs
 D:\XamarinProjects\TestApi\TestApi\TestApi\obj\Release\netstandard2.0\Views\ItemsPage.xaml.g.cs
 D:\XamarinProjects\TestApi\TestApi\TestApi\obj\Release\netstandard2.0\Views\LoginPage.xaml.g.cs

@@ -6,11 +6,9 @@
 
     <ScrollView>
         <StackLayout >
-
             <AbsoluteLayout >
                 <!-- Изображение с задним фоном -->
                 <Image Source="testWall.png" Aspect="AspectFill" HeightRequest="220" />
-
                 <!-- Размещаем элементы поверх изображения в Grid -->
                 <StackLayout Padding="5">
                     <FlexLayout Margin="10" Direction="Row" JustifyContent="SpaceAround" AlignItems="Center">
@@ -19,7 +17,6 @@
                         <!-- Фото faiza_logo.png рядом с текстом -->
                         <Image Source="https://dostavka312.kg/public/public/staff_avatars/5ba356930b59c.png" WidthRequest="80" HeightRequest="80" />
                     </FlexLayout>
-
                     <FlexLayout Direction="Row" JustifyContent="End">
                         <Frame Margin="5" BackgroundColor="white" WidthRequest="90" CornerRadius="5"  Padding="5">
                             <FlexLayout Direction="Row"  >
@@ -72,7 +69,7 @@
                 </StackLayout>
             </AbsoluteLayout>
 
-            <StackLayout >
+            <StackLayout>
                 <Label Margin="5" Text="Фотографии товаров в приложении могут не соответствовать их виду в действительности"
                FontSize="18" FontAttributes="Bold" TextColor="Black"/>
                 <Label Margin="5" Text="ВНИМАНИЕ! Цена за услуги может варьироваться в зависимости от работы курьера, также существует доплата за пределы города."
@@ -92,16 +89,8 @@
                 </ScrollView>
             </StackLayout>
 
-
-
             <StackLayout x:Name="foodNameStackLayout" Orientation="Vertical">
                 <!-- Здесь будут отображаться блоки для блюд -->
-            </StackLayout>
-
-            <!-- Элемент, который будет отображать код заведения -->
-            <StackLayout x:Name="establishmentCodeStackLayout" Orientation="Horizontal">
-                <Label Text="Код заведения: " TextColor="Black" FontSize="16" VerticalOptions="Center" />
-                <Label x:Name="establishmentCodeLabel" Text="" TextColor="Black" FontSize="16" VerticalOptions="Center" />
             </StackLayout>
         </StackLayout>
     </ScrollView>

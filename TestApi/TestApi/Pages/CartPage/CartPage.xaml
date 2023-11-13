@@ -14,8 +14,8 @@
                         <StackLayout Orientation="Horizontal" Margin="10,0,10,0">
                             <Label Text="{Binding ProductName}" HorizontalOptions="StartAndExpand" />
                             <Label Text="{Binding ProductPrice}" HorizontalOptions="Center" />
-                            <Label Text="{Binding EstablishmentCode}" HorizontalOptions="Center" />
-                            <Label Text="{Binding FoodCodeid}" HorizontalOptions="Center" />
+                            <!--<Label Text="{Binding EstablishmentCode}" HorizontalOptions="Center" /> -->
+                            <!--<Label Text="{Binding FoodCodeid}" HorizontalOptions="Center" />-->
                             <Button Text="-" Clicked="DecreaseQuantityClicked" WidthRequest="50" CommandParameter="{Binding .}" />
                             <Label Text="{Binding Quantity}" HorizontalOptions="Center" />
                             <Button Text="+" Clicked="IncreaseQuantityClicked" WidthRequest="50" CommandParameter="{Binding .}" />

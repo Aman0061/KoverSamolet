@@ -1,10 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "KQyzn/VpkUBzD65uwXYOKXgYTiNxrNL8PpKHr+asD67u2N2gm3sgXRtR/hiUJsm+LSAddbocD08HXeoIOrKcjQ==",
+  "dgSpecHash": "Qa8nFCMkUSthdRj2J1tryenTQnAwIec1aQhivzrzivokxcvrVG2QX1Awm7YjxfABQDNlXWHN1HsgX/Chh0M6fg==",
   "success": true,
   "projectFilePath": "D:\\XamarinProjects\\TestApi\\TestApi\\TestApi.Android\\TestApi.Android.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Altynai\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
+    "C:\\Users\\Altynai\\.nuget\\packages\\skiasharp\\2.88.6\\skiasharp.2.88.6.nupkg.sha512",
+    "C:\\Users\\Altynai\\.nuget\\packages\\skiasharp.extended\\1.60.0\\skiasharp.extended.1.60.0.nupkg.sha512",
+    "C:\\Users\\Altynai\\.nuget\\packages\\skiasharp.nativeassets.android\\2.88.6\\skiasharp.nativeassets.android.2.88.6.nupkg.sha512",
+    "C:\\Users\\Altynai\\.nuget\\packages\\skiasharp.views\\2.88.6\\skiasharp.views.2.88.6.nupkg.sha512",
+    "C:\\Users\\Altynai\\.nuget\\packages\\skiasharp.views.forms\\2.88.6\\skiasharp.views.forms.2.88.6.nupkg.sha512",
     "C:\\Users\\Altynai\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
     "C:\\Users\\Altynai\\.nuget\\packages\\xamarin.androidx.activity\\1.2.4.1\\xamarin.androidx.activity.1.2.4.1.nupkg.sha512",
     "C:\\Users\\Altynai\\.nuget\\packages\\xamarin.androidx.annotation\\1.2.0.1\\xamarin.androidx.annotation.1.2.0.1.nupkg.sha512",
@@ -60,6 +65,7 @@
     "C:\\Users\\Altynai\\.nuget\\packages\\xamarin.androidx.viewpager\\1.0.0.8\\xamarin.androidx.viewpager.1.0.0.8.nupkg.sha512",
     "C:\\Users\\Altynai\\.nuget\\packages\\xamarin.androidx.viewpager2\\1.0.0.10\\xamarin.androidx.viewpager2.1.0.0.10.nupkg.sha512",
     "C:\\Users\\Altynai\\.nuget\\packages\\xamarin.essentials\\1.7.0\\xamarin.essentials.1.7.0.nupkg.sha512",
+    "C:\\Users\\Altynai\\.nuget\\packages\\xamarin.ffimageloading\\2.4.11.982\\xamarin.ffimageloading.2.4.11.982.nupkg.sha512",
     "C:\\Users\\Altynai\\.nuget\\packages\\xamarin.forms\\5.0.0.2196\\xamarin.forms.5.0.0.2196.nupkg.sha512",
     "C:\\Users\\Altynai\\.nuget\\packages\\xamarin.google.android.material\\1.4.0.2\\xamarin.google.android.material.1.4.0.2.nupkg.sha512",
     "C:\\Users\\Altynai\\.nuget\\packages\\xamarin.google.guava.listenablefuture\\1.0.0.2\\xamarin.google.guava.listenablefuture.1.0.0.2.nupkg.sha512"

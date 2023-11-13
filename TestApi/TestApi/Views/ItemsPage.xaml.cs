@@ -21,6 +21,7 @@ namespace TestApi.Views
             InitializeComponent();
 
             BindingContext = _viewModel = new ItemsViewModel();
+            Shell.SetNavBarIsVisible(this, false);
         }
 
         protected override void OnAppearing()

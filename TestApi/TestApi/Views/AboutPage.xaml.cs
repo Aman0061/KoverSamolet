@@ -14,6 +14,7 @@ namespace TestApi.Views
         public AboutPage()
         {
             InitializeComponent();
+            Shell.SetNavBarIsVisible(this, false);
         }
 
         private async void Button_Clicked(object sender, EventArgs e)

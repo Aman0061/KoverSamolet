@@ -109,50 +109,143 @@ namespace TestApi.Pages.CafeList
                 establishmentData.Fields.TryGetValue("code_establishment", out var codeEstablishment) &&
                 establishmentData.Fields.TryGetValue("price_dostavka", out var price_dostavka) &&
                 establishmentData.Fields.TryGetValue("percent_stavka", out var percentStavka) &&
-                establishmentData.Fields.TryGetValue("from_time_formatted", out var fromTimeFormatted))
+                establishmentData.Fields.TryGetValue("from_time_formatted", out var fromTimeFormatted) &&
+                establishmentData.Fields.TryGetValue("to_time_formatted", out var toTimeFormatted))
             {
+
+
+                //Главный Контейнер куда записывается контент списка заведений
                 Frame restaurantFrame = new Frame
                 {
                     WidthRequest = 180,
-                    Margin = 5,
+                    Margin = 2,
                     Padding = 0,
                     CornerRadius = 10,
+                    BackgroundColor = Color.FromHex("#F4F4F4"),
+                    HasShadow = false,
                 };
                 restaurantFrame.GestureRecognizers.Add(new TapGestureRecognizer
                 {
                     Command = new Command(() => HandleFrameTapped(establishmentData))
                 });
 
+
+                //Фото ресторана
                 Image restaurantImage = new Image
                 {
                     Source = "https://dostavka312.kg/public/public/photo/5ea59453011df.jpg", //путь к изображению
                     Aspect = Aspect.AspectFill,
+                    
                 };
 
+                //Имя заведения
                 Label restaurantNameLabel = new Label
                 {
                     Text = establishmentName, // имя заведения
-                    FontAttributes = FontAttributes.Bold,
+                    FontAttributes = FontAttributes.Bold, //Делаем текст жирным 
                     HorizontalOptions = LayoutOptions.Start,
                     VerticalOptions = LayoutOptions.CenterAndExpand,
                     TextColor = Color.Black,
-                    FontSize = 20,
-                    Margin = new Thickness(5, 0, 0, 0),
-
-                };
-
-                Label restaurantCodeLabel = new Label
-                {
-                    Text = codeEstablishment, // код заведения
-                    FontAttributes = FontAttributes.Italic,
-                    HorizontalOptions = LayoutOptions.Start,
-                    VerticalOptions = LayoutOptions.CenterAndExpand,
-                    TextColor = Color.Gray,
                     FontSize = 16,
-                    Margin = new Thickness(5, 0, 0, 0),
 
                 };
 
+                
+
+
+                //---------------------------------------------Контейнер для указания рейтинга заведения в ряд-----------------------------------------------------
+                StackLayout stackLayout = new StackLayout
+                {
+                    Orientation = StackOrientation.Horizontal, // Расположение элементов в горизонтальном порядке
+                    VerticalOptions = LayoutOptions.CenterAndExpand, // Выравнивание по вертикали
+                    Spacing = 5 // Расстояние между элементами
+                };
+
+                //иконка звезды
+                Image favoriteImage = new Image
+                {
+                    Source = "favorite.png",
+                };
+
+
+                //Текст рейтига 
+                Label feedback = new Label
+                {
+                   Text = "4.7",
+                   TextColor = Color.Black,
+                   FontAttributes = FontAttributes.Bold
+
+                };
+
+                //Текст кол-ва комментариев
+                Label feedBackCount = new Label
+                {
+                    Text = "(200+)",
+                    TextColor = Color.FromHex("#828282")
+                };
+
+                //Соответвенно то, как это все добавляется в контейнер stackLayout
+                stackLayout.Children.Add( favoriteImage);
+                stackLayout.Children.Add( feedback);
+                stackLayout.Children.Add( feedBackCount);
+
+
+
+                //---------------------------------------------Контейнер для указания времени работы заведения в ряд-----------------------------------------------------
+                StackLayout workTime = new StackLayout
+                {
+                    Orientation = StackOrientation.Horizontal, // Расположение элементов в горизонтальном порядке
+                    VerticalOptions = LayoutOptions.CenterAndExpand, // Выравнивание по вертикали
+                    Spacing = 5 // Расстояние между элементами
+                };
+
+                Image workTimeIcon = new Image
+                {
+                    Source = "Clock.png"
+                };
+
+                Label workFrom = new Label
+                {
+                    Text = fromTimeFormatted // время начала работы
+                };
+
+                Label line = new Label
+                {
+                    Text = "-",
+                };
+
+                Label workUntill = new Label
+                {
+                    Text = toTimeFormatted // время конца работы
+                };
+
+                workTime.Children.Add( workTimeIcon);
+                workTime.Children.Add( workFrom);
+                workTime.Children.Add( line);
+                workTime.Children.Add( workUntill);
+
+
+
+
+
+
+
+                //---------------------------------------------Контейнер для указания типа заведения в ряд-----------------------------------------------------
+
+
+                StackLayout kichenType = new StackLayout
+                {
+                    Orientation = StackOrientation.Horizontal, // Расположение элементов в горизонтальном порядке
+                    VerticalOptions = LayoutOptions.CenterAndExpand, // Выравнивание по вертикали
+                    Spacing = 5 // Расстояние между элементами
+                };
+
+                Image forkIcon = new Image
+                {
+                    Source = "Fork.png"
+                };
+
+                //Название категории
                 Label categoryNameLabel = new Label
                 {
                     Text = categoryName, // название категории
@@ -161,20 +254,81 @@ namespace TestApi.Pages.CafeList
                     VerticalOptions = LayoutOptions.CenterAndExpand,
                     TextColor = Color.Gray,
                     FontSize = 16,
-                    Margin = new Thickness(5, 0, 0, 0),
+                };
+
+                kichenType.Children.Add( forkIcon );
+                kichenType.Children.Add(categoryNameLabel);
+
+
+
+
+
+                //--------------------------------------------- Контейнер для цены доставки и среднего чека в ряд -----------------------------------------------------
+
+
+                StackLayout mainLastParams = new StackLayout
+                {
+                    Orientation = StackOrientation.Horizontal, // Расположение элементов в горизонтальном порядке
+                    VerticalOptions = LayoutOptions.CenterAndExpand, // Выравнивание по вертикали
+                    Spacing = 5 // Расстояние между элементами
+                };
+
+                StackLayout deliveryCost = new StackLayout
+                {
+                    Orientation = StackOrientation.Horizontal, // Расположение элементов в горизонтальном порядке
+                    VerticalOptions = LayoutOptions.CenterAndExpand, // Выравнивание по вертикали
+                    Spacing = 5 // Расстояние между элементами
+                };
+
+                Image truckIcon = new Image
+                {
+                    Source = "truck.png"
                 };
 
                 Label dostavkaNameLabel = new Label
                 {
-                    Text = "Доставка: " + price_dostavka + "сом", // название категории
+                    Text = price_dostavka + "сом", // название категории
                     FontAttributes = FontAttributes.Italic,
                     HorizontalOptions = LayoutOptions.Start,
                     VerticalOptions = LayoutOptions.CenterAndExpand,
                     TextColor = Color.Gray,
-                    Margin = new Thickness(5,0,0,0),
-
                     FontSize = 16
                 };
+
+                deliveryCost.Children.Add(truckIcon);
+                deliveryCost.Children.Add(dostavkaNameLabel);
+
+
+
+                StackLayout billCost = new StackLayout
+                {
+                    Orientation = StackOrientation.Horizontal, // Расположение элементов в горизонтальном порядке
+                    VerticalOptions = LayoutOptions.CenterAndExpand, // Выравнивание по вертикали
+                    Spacing = 5 // Расстояние между элементами
+                };
+
+                Image billIcon = new Image
+                {
+                    Source = "bill.png"
+                };
+
+                Label billCountLabel = new Label
+                {
+                    Text = percentStavka + "сом", // название категории
+                    FontAttributes = FontAttributes.Italic,
+                    HorizontalOptions = LayoutOptions.Start,
+                    VerticalOptions = LayoutOptions.CenterAndExpand,
+                    TextColor = Color.Gray,
+                    FontSize = 16
+                };
+
+                billCost.Children.Add(billIcon);
+                billCost.Children.Add(billCountLabel);
+
+
+                mainLastParams.Children.Add(deliveryCost);
+                mainLastParams.Children.Add(billCost);
+
 
                 restaurantFrame.Content = new StackLayout
                 {
@@ -182,8 +336,10 @@ namespace TestApi.Pages.CafeList
                     {
                         restaurantImage,
                         restaurantNameLabel,
-                        categoryNameLabel,
-                        dostavkaNameLabel
+                        stackLayout,
+                        workTime,
+                        kichenType,
+                        mainLastParams
                         // другие элементы, такие как рейтинг, время работы, кухня и др.
                     }
                 };

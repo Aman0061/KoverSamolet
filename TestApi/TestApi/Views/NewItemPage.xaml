@@ -6,17 +6,101 @@
              Title="New Item"
              xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
              ios:Page.UseSafeArea="true">
-    <ContentPage.Content>
-        <StackLayout Spacing="3" Padding="15">
-            <Label Text="Text" FontSize="Medium" />
-            <Entry Text="{Binding Text, Mode=TwoWay}" FontSize="Medium" />
-            <Label Text="Description" FontSize="Medium" />
-            <Editor Text="{Binding Description, Mode=TwoWay}" AutoSize="TextChanges" FontSize="Medium" Margin="0" />
-            <StackLayout Orientation="Horizontal">
-                <Button Text="Cancel" Command="{Binding CancelCommand}" HorizontalOptions="FillAndExpand"></Button>
-                <Button Text="Save" Command="{Binding SaveCommand}" HorizontalOptions="FillAndExpand"></Button>
+    <StackLayout>
+        <Frame Background="white" Margin="0,24,0,0" CornerRadius="10">
+            <StackLayout>
+                <StackLayout Orientation="Horizontal" Spacing="230">
+                    <Label TextColor="Black" FontAttributes="Bold" FontSize="20" Text="Профиль"/>
+                    <Image WidthRequest="16" HeightRequest="16" Source="Pen.png"/>
+                </StackLayout>
+                <StackLayout>
+                    <Label TextColor="Black" FontAttributes="Bold" Margin="0, 10, 0, 0" FontSize="16" Text="Рассул Маулов"/>
+                    <Label TextColor="#FFC12E" FontAttributes="Bold" FontSize="22" Text="0 (553) 93-16-11"/>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal" Spacing="130" Margin="0, 16, 0, 0">
+                    <Label TextColor="Black"  FontSize="16" Text="Киевская улица, 71"/>
+                    <Label TextColor="#FFC12E" Margin="0, 3, 0, 0"  FontSize="14" Text="Изменить"/>
+                </StackLayout>
+                <BoxView HeightRequest="1" Margin="10" Color="#F4F4F4" />
+                <StackLayout>
+                    <Label TextColor="#222" FontAttributes="Bold" Margin="0, 10, 0, 0" FontSize="16" Text="Контакты"/>
+                    <Label TextColor="#828282"  Margin="0, 10, 0, 0" FontSize="16" Text="Выйти"/>
+                </StackLayout>
             </StackLayout>
-        </StackLayout>
-    </ContentPage.Content>
-    
+        </Frame>
+
+        <Label Text="История заказов" TextColor="Black"  FontAttributes="Bold" Margin="20, 20, 0, 0" FontSize="20"/>
+        <ScrollView>
+
+            <StackLayout>
+                <Frame Background="white" Margin="5" Padding="8" CornerRadius="10">
+
+                    <StackLayout>
+                        <StackLayout Orientation="Horizontal" Padding="0" Margin="0">
+                            <StackLayout>
+                                <Image Source="food_faiza.png"/>
+                            </StackLayout>
+                            <StackLayout>
+                                <Label Text="В доставке" FontAttributes="Bold" Margin="0, 10, 0, 0"  FontSize="14" TextColor="#FFC12E"/>
+                                <Label Text="Заказ 08.09.2023 в 12:54" FontSize="18" FontAttributes="Bold" TextColor="Black"/>
+                                <Label Text="Заказ по списку" TextColor="Black"/>
+                            </StackLayout>
+                        </StackLayout>
+                        <StackLayout Margin="0, 8, 0, 0" Orientation="Horizontal" Padding="0" Spacing="125">
+                            <Label FontSize="24" FontAttributes="Bold" TextColor="Black" HeightRequest="30" Margin="0, 12, 0, 0"  Text="680 com"/>
+                            <Button WidthRequest="142" Text="ПОДРОБНО" CornerRadius="10" Background="#FFC12E" TextColor="Black"/>
+                        </StackLayout>
+
+                    </StackLayout>
+
+
+                </Frame>
+                <Frame Background="white" Margin="5" Padding="8" CornerRadius="10">
+
+                    <StackLayout>
+                        <StackLayout Orientation="Horizontal" Padding="0" Margin="0">
+                            <StackLayout>
+                                <Image Source="food_faiza.png"/>
+                            </StackLayout>
+                            <StackLayout>
+                                <Label Text="В доставке" FontAttributes="Bold" Margin="0, 10, 0, 0"  FontSize="14" TextColor="#FFC12E"/>
+                                <Label Text="Заказ 08.09.2023 в 12:54" FontSize="18" FontAttributes="Bold" TextColor="Black"/>
+                                <Label Text="Заказ по списку" TextColor="Black"/>
+                            </StackLayout>
+                        </StackLayout>
+                        <StackLayout Margin="0, 8, 0, 0" Orientation="Horizontal" Padding="0" Spacing="125">
+                            <Label FontSize="24" FontAttributes="Bold" TextColor="Black" HeightRequest="30" Margin="0, 12, 0, 0"  Text="680 com"/>
+                            <Button WidthRequest="142" Text="ПОДРОБНО" CornerRadius="10" Background="#FFC12E" TextColor="Black"/>
+                        </StackLayout>
+
+                    </StackLayout>
+
+
+                </Frame>
+                <Frame Background="white" Margin="5" Padding="8" CornerRadius="10">
+
+                    <StackLayout>
+                        <StackLayout Orientation="Horizontal" Padding="0" Margin="0">
+                            <StackLayout>
+                                <Image Source="food_faiza.png"/>
+                            </StackLayout>
+                            <StackLayout>
+                                <Label Text="В доставке" FontAttributes="Bold" Margin="0, 10, 0, 0"  FontSize="14" TextColor="#FFC12E"/>
+                                <Label Text="Заказ 08.09.2023 в 12:54" FontSize="18" FontAttributes="Bold" TextColor="Black"/>
+                                <Label Text="Заказ по списку" TextColor="Black"/>
+                            </StackLayout>
+                        </StackLayout>
+                        <StackLayout Margin="0, 8, 0, 0" Orientation="Horizontal" Padding="0" Spacing="125">
+                            <Label FontSize="24" FontAttributes="Bold" TextColor="Black" HeightRequest="30" Margin="0, 12, 0, 0"  Text="680 com"/>
+                            <Button WidthRequest="142" Text="ПОДРОБНО" CornerRadius="10" Background="#FFC12E" TextColor="Black"/>
+                        </StackLayout>
+
+                    </StackLayout>
+
+
+                </Frame>
+            </StackLayout>
+        </ScrollView>
+    </StackLayout>
+
 </ContentPage>

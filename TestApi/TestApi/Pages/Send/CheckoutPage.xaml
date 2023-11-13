@@ -9,7 +9,7 @@
         <Entry x:Name="phoneEntry" Placeholder="Телефон" />
 
         <!-- Поле "ФИО" -->
-        <Entry x:Name="fioEntry" Placeholder="ФИО" />
+        <Entry x:Name="fioEntry" Placeholder="ФИИО" />
 
         <!-- Поле "Адрес" -->
         <Entry x:Name="addressEntry" Placeholder="Адрес" />

@@ -15,6 +15,8 @@ namespace TestApi.Pages.PageCafe
         public Page1(EstablishmentData establishmentData, string jsonData)
         {
             InitializeComponent();
+
+            BindingContext = this; // Привязываем контекст к текущей странице
             this.jsonData = jsonData;
             categoryButtonsList = new List<Button>();
 
@@ -22,9 +24,6 @@ namespace TestApi.Pages.PageCafe
             DeliveryPrice.Text = establishmentData.Fields["price_dostavka"].ToString() + " сом";
             StavkaPrice.Text = "~" + establishmentData.Fields["percent_stavka"].ToString() + " сом";
             WorkTime.Text = establishmentData.Fields["from_time_formatted"].ToString() + " - " + establishmentData.Fields["to_time_formatted"].ToString();
-
-            // Отображаем код заведения
-            establishmentCodeLabel.Text = establishmentData.Fields["code_establishment"].ToString();
 
             try
             {
@@ -152,6 +151,7 @@ namespace TestApi.Pages.PageCafe
         {
             var foodBlock = new StackLayout
             {
+
                 Orientation = StackOrientation.Vertical
             };
 
@@ -170,17 +170,23 @@ namespace TestApi.Pages.PageCafe
                 FontAttributes = FontAttributes.Bold
             };
 
-            var codeid = new Label
+            Image restaurantImage = new Image
             {
-                Text = foodcode,
+                Source = "https://dostavka312.kg/public/public/photo/5ea59453011df.jpg", //путь к изображению
+                Aspect = Aspect.AspectFill,
             };
 
-            var establishmentCodeLabel = new Label
+            /*var codeid = new Label
+            {
+                Text = foodcode,
+            };*/
+
+            /*var establishmentCodeLabel = new Label
             {
                 Text = "Код заведения: " + establishmentCode, // Отобразите код заведения
                 TextColor = Color.FromHex("#777"),
                 FontSize = 14
-            };
+            };*/
 
             var addToCartButton = new Button
             {
@@ -208,12 +214,14 @@ namespace TestApi.Pages.PageCafe
                 DisplayAlert("Добавлено в корзину", productName + " добавлено в корзину", "OK");
             };
 
+            
+
+            foodBlock.Children.Add(restaurantImage);
             foodBlock.Children.Add(foodNameLabel);
             foodBlock.Children.Add(productPriceLabel);
-            foodBlock.Children.Add(establishmentCodeLabel); // Добавьте код заведения в блок
+            /*foodBlock.Children.Add(establishmentCodeLabel);*/ // Добавьте код заведения в блок
             foodBlock.Children.Add(addToCartButton);
-            foodBlock.Children.Add(codeid);
-
+            /*foodBlock.Children.Add(codeid);*/
             foodNameStackLayout.Children.Add(foodBlock);
         }
 

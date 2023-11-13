@@ -62,7 +62,7 @@ namespace TestApi.Pages.Send
                 {
                     phone = phoneEntry.Text,
                     fio = fioEntry.Text,
-                    zakaz_from_address = "Ошская 34",
+                    zakaz_from_address = "FAIZA",
                     zakaz_to_address = addressEntry.Text,
                     zakaz_to_address_dop = "GGWP",
                     zakaz_comment = commentEntry.Text,
@@ -70,13 +70,13 @@ namespace TestApi.Pages.Send
                     dostavka = "200",
                     summ = GetTotalAmount(),
                     check_dostavka = 0,
-                    type_oplata = 0,
-                    type_zakaz = 0,
+                    type_oplata = 1,
+                    type_zakaz = 1,
                     estab = establishmentCodes, // Список уникальных кодов заведений
                     product = productData // Список данных о продуктах
                 };
 
-                // Преобразуйте JSON-объект в строку
+                // Преобразуй JSON-объект в строку
                 string jsonData = JsonConvert.SerializeObject(data);
 
                 // Создайте HttpClient

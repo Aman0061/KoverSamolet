@@ -15,6 +15,7 @@ namespace TestApi.Views
         public NewItemPage()
         {
             InitializeComponent();
+            Shell.SetNavBarIsVisible(this, false);
             BindingContext = new NewItemViewModel();
         }
     }

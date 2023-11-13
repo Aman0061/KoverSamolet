@@ -3,8 +3,14 @@ public class MonoPackageManager_Resources {
 	public static String[] Assemblies = new String[]{
 		/* We need to ensure that "TestApi.Android.dll" comes first in this list. */
 		"TestApi.Android.dll",
+		"FFImageLoading.dll",
+		"FFImageLoading.Platform.dll",
 		"FormsViewGroup.dll",
 		"Newtonsoft.Json.dll",
+		"SkiaSharp.dll",
+		"SkiaSharp.Extended.dll",
+		"SkiaSharp.Views.Android.dll",
+		"SkiaSharp.Views.Forms.dll",
 		"TestApi.dll",
 		"Xamarin.AndroidX.Activity.dll",
 		"Xamarin.AndroidX.Annotation.dll",

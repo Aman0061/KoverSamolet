@@ -1,14 +1,23 @@
 {
   "version": 2,
-  "dgSpecHash": "928IKq5fWCDnkK0Hh4t6UCO6PQd3hF1G6Q/6HkkpLqqFrZnAeZa9C5lqal6kXtj9X97lUByqdaoJnipVf5ivVQ==",
+  "dgSpecHash": "G1WC4vyiNHFT9uV5GVnaLIqTOZMfsz4ATb2iF1ai7rgIurzHaIBpdsU6AnSgkfbChHSHj7T38oDxqEm1r+o1Fw==",
   "success": true,
   "projectFilePath": "D:\\XamarinProjects\\TestApi\\TestApi\\TestApi\\TestApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Altynai\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\Altynai\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
     "C:\\Users\\Altynai\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
+    "C:\\Users\\Altynai\\.nuget\\packages\\skiasharp\\2.88.6\\skiasharp.2.88.6.nupkg.sha512",
+    "C:\\Users\\Altynai\\.nuget\\packages\\skiasharp.extended\\1.60.0\\skiasharp.extended.1.60.0.nupkg.sha512",
+    "C:\\Users\\Altynai\\.nuget\\packages\\skiasharp.nativeassets.macos\\2.88.6\\skiasharp.nativeassets.macos.2.88.6.nupkg.sha512",
+    "C:\\Users\\Altynai\\.nuget\\packages\\skiasharp.nativeassets.win32\\2.88.6\\skiasharp.nativeassets.win32.2.88.6.nupkg.sha512",
+    "C:\\Users\\Altynai\\.nuget\\packages\\skiasharp.views.forms\\2.88.6\\skiasharp.views.forms.2.88.6.nupkg.sha512",
+    "C:\\Users\\Altynai\\.nuget\\packages\\system.buffers\\4.5.1\\system.buffers.4.5.1.nupkg.sha512",
+    "C:\\Users\\Altynai\\.nuget\\packages\\system.memory\\4.5.5\\system.memory.4.5.5.nupkg.sha512",
     "C:\\Users\\Altynai\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\Altynai\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.5.3\\system.runtime.compilerservices.unsafe.4.5.3.nupkg.sha512",
     "C:\\Users\\Altynai\\.nuget\\packages\\xamarin.essentials\\1.7.0\\xamarin.essentials.1.7.0.nupkg.sha512",
+    "C:\\Users\\Altynai\\.nuget\\packages\\xamarin.ffimageloading\\2.4.11.982\\xamarin.ffimageloading.2.4.11.982.nupkg.sha512",
     "C:\\Users\\Altynai\\.nuget\\packages\\xamarin.forms\\5.0.0.2196\\xamarin.forms.5.0.0.2196.nupkg.sha512"
   ],
   "logs": []
